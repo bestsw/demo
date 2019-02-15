@@ -9,6 +9,7 @@ pipeline {
        stage('Build') {
           agent any
           steps {
+              sh "echo ${env.dockerHubUser}"
               sh "docker --version"
               sh "docker build -t ${env.imageName} ."
           }
