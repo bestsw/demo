@@ -2,7 +2,7 @@ pipeline {
     agent none
     environment {
         imageName = 'demo'
-        port = 80
+        port = 85
     }
 
     stages {
